@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio website" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="logo">Aryan</div>
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle">Dark</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-box">
+          <img
+            class="hero-avatar"
+            src="assets/avatar.png"
+            alt="Aryan profile photo"
+            onerror="this.src='aryan.jpeg'"
+          />
+          <div>
+            <h1>Hi, I’m Aryan</h1>
+            <p>Front-End developer building modern web experiences with HTML, CSS, and JavaScript.</p>
+            <div class="tech-icons">
+              <span title="HTML5">⚡</span>
+              <span title="CSS3">🎨</span>
+              <span title="JavaScript">💻</span>
+              <span title="React">⚛️</span>
+            </div>
+            <a class="cta" href="#projects">See Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <h2>About Me</h2>
+        <p>Fast learner, problem-solver, and detail-focused developer. I turn design ideas into live websites and web apps.</p>
+        <ul>
+          <li>HTML5 / CSS3 / JavaScript</li>
+          <li>Responsive design</li>
+          <li>Version control (Git)</li>
+          <li> Python </li>
+          <li> Database </li>
+        </ul>
+      </section>
+
+      <section class="section projects" id="projects">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>Modern single-page portfolio with light/dark themes, responsive design, and animations.</p>
+            <a href="https://github.com/your-username/portfolio" target="_blank" rel="noopener">
+              <span class="icon">🔗</span> GitHub repository
+            </a>
+          </article>
+          <article class="card">
+            <h3>Notes Website</h3>
+            <p>Notes Web is for storing notes for gtu student also for personal use. We can also download notes and solutions.</p>
+            <a href="https://mynotes-lxsb.onrender.com/" target="_blank" rel="noopener">
+              <span class="icon">🔗</span> Live demo
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aryan@example.com">panchalaryan303@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Aryanpanch80" target="_blank" rel="noopener">https://github.com/Aryanpanch80</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>© 2026 Aryan. Built with love in code.</small>
+    </footer>
+  </div>
+</body>
+</html>
